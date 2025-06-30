@@ -1,0 +1,83 @@
+.top-box {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-text {
+  font-size: calc(40px + 100vw / 50);
+  font-weight: 800;
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.small-text {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.4px;
+  background-color: #ffffff33;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 3px 10px #00000022;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.small-text b {
+  font-weight: 700;
+  /* text-decoration: underline; */
+  text-underline-offset: 3px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff33;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px #00000022;
+}
+
+.star {
+  font-size: 9px;
+}
+
+.links-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .small-text {
+    flex-direction: column;
+  }
+}
+
+.type-cursor {
+  display: inline-block;
+  width: 1ch;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

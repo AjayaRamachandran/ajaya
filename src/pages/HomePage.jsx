@@ -82,18 +82,24 @@ function HomePage({ seed = 100 }) {
         <div className='big-text' text-style='display' style={{ position: 'relative', zIndex: 1 }}>
           <Sparkles size={52} style={{marginRight:'20px', color:'#ef9067'}}/>{typedText}{showCursor && <span className="type-cursor">⬤</span>}
         </div>
-        <div className='specular' style={{ "--specular-color": "#2d2d61" }}>
-          <div className='small-text' style={{ position: 'relative', zIndex: 1 }}>
+        <Specular className='small-text' style={{ "--specular-color": "#4e4e80" }}>
+          
             I'm building 
-            <div className='specular' style={{ "--specular-color": "#595980" }}><b><Hammer />powerful software</b></div>
+            <Specular style={{ "--specular-color": "#6b6b96" }}><b><Hammer />powerful software</b></Specular>
              with 
-            <div className='specular' style={{ "--specular-color": "#595980" }}><b><Brush />purposeful design.</b></div>
-          </div>
-        </div>
+            <Specular style={{ "--specular-color": "#6b6b96" }}><b><Brush />purposeful design.</b></Specular>
+
+        </Specular>
         <div className='links-row'>
-          <Specular className='specular-appearance' text='GitHub' icon={<Github size={18} />} dynamic={true} />
-          <Specular className='specular-appearance' text='Linkedin' icon={<Linkedin size={18} />} dynamic={true} />
-          <Specular className='specular-appearance' text='Resume' icon={<FileText size={18} />} dynamic={true} />
+          <Specular className='specular-appearance' dynamic={true}>
+            <span style={{display:'inline-flex', alignItems:'center'}}><Github size={18} /></span>GitHub
+          </Specular>
+          <Specular className='specular-appearance' dynamic={true}>
+            <span style={{display:'inline-flex', alignItems:'center'}}><Linkedin size={18} /></span>Linkedin
+          </Specular>
+          <Specular className='specular-appearance' dynamic={true}>
+            <span style={{display:'inline-flex', alignItems:'center'}}><FileText size={18} /></span>Resume
+          </Specular>
         </div>
       </div>
       <hr />

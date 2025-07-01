@@ -42,17 +42,6 @@
 }
 .small-text b {
   font-weight: 700;
-  /* text-decoration: underline; */
-  text-underline-offset: 3px;
-  gap: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff33;
-  padding: 3px 10px;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px #00000022;
 }
 
 .star {
@@ -80,4 +69,11 @@
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
+}
+
+b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }

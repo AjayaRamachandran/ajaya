@@ -9,10 +9,18 @@ function NavLinks({ mobile = false }) {
   if (mobile) {
     return (
       <div className="mobile-navbar">
-        <Specular className='navbar-link' text='Flagship Project' icon={<Star size={30}/>} dynamic={true} mobile={true} />
-        <Specular className='navbar-link' text='Experience' icon={<Briefcase size={30}/>} dynamic={true} mobile={true} />
-        <Specular className='navbar-link' text='Education' icon={<GraduationCap size={30}/>} dynamic={true} mobile={true} />
-        <Specular className='navbar-link' text='My Philosophy' icon={<Heart size={30}/>} dynamic={true} mobile={true} />
+        <Specular className='navbar-link' dynamic={true} mobile={true}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Star size={30}/></span>Flagship Project
+        </Specular>
+        <Specular className='navbar-link' dynamic={true} mobile={true}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Briefcase size={30}/></span>Experience
+        </Specular>
+        <Specular className='navbar-link' dynamic={true} mobile={true}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><GraduationCap size={30}/></span>Education
+        </Specular>
+        <Specular className='navbar-link' dynamic={true} mobile={true}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Heart size={30}/></span>My Philosophy
+        </Specular>
       </div>
     );
   }
@@ -20,10 +28,18 @@ function NavLinks({ mobile = false }) {
     <>
       <div></div>
       <div className="navbar-right">
-        <Specular className='navbar-link' text='Flagship Project' icon={<Star size={18}/>} dynamic={true} />
-        <Specular className='navbar-link' text='Experience' icon={<Briefcase size={18}/>} dynamic={true} />
-        <Specular className='navbar-link' text='Education' icon={<GraduationCap size={18}/>} dynamic={true} />
-        <Specular className='navbar-link' text='My Philosophy' icon={<Heart size={18}/>} dynamic={true} />
+        <Specular className='navbar-link' dynamic={true}>
+          <span style={{display:'inline-flex', alignItems:'center'}}><Star size={18}/></span>Flagship Project
+        </Specular>
+        <Specular className='navbar-link' dynamic={true}>
+          <span style={{display:'inline-flex', alignItems:'center'}}><Briefcase size={18}/></span>Experience
+        </Specular>
+        <Specular className='navbar-link' dynamic={true}>
+          <span style={{display:'inline-flex', alignItems:'center'}}><GraduationCap size={18}/></span>Education
+        </Specular>
+        <Specular className='navbar-link' dynamic={true}>
+          <span style={{display:'inline-flex', alignItems:'center'}}><Heart size={18}/></span>My Philosophy
+        </Specular>
       </div>
     </>
   )
@@ -47,7 +63,7 @@ function FreshNavbar() {
   return (
     <>
       <div className={`navbar ${scrolled ? 'scrolled' : ''} ${isMobile ? 'mobile' : ''}`}>
-        <div className={`navbar-title ${scrolled ? 'scrolled' : ''}`}><Blocks /><i>Ajaya Ramachandran</i></div>
+        <div className={`navbar-title ${scrolled ? 'scrolled' : ''}`} text-style='display'><Blocks />Ajaya Ramachandran</div>
         <NavLinks mobile={isMobile} />
       </div>
     </>

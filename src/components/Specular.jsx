@@ -11,6 +11,7 @@ function Specular({
   onClick = undefined, 
   overrideSize = null,
   callToAction = false,
+  responsive = false,
   ...rest
 }) {
   const [desiredAngle, setDesiredAngle] = useState(45);
@@ -51,7 +52,7 @@ function Specular({
       onClick={onClick}
       {...rest}
     >
-      <div style={{padding: '7px 10px', display: 'flex', alignItems:'center', gap: '10px'}}>{children}</div>
+      <div className={responsive? 'responsive': ''} style={{padding: '7px 10px', display: 'flex', alignItems:'center', gap: '10px'}}>{children}</div>
     </div>
   );
 }

@@ -82,15 +82,16 @@ function Flagship() {
       {/* Symphony project restored as a standalone section */}
       <Specular className="symphony-section" overrideSize={'calc(40% + 200px)'}>
         <div className='section'>
-          <span className='header' text-style='display'>Symphony</span>
-          <span className='subheader' text-style='display'>A professional-grade music production platform.</span>
-          <span className='content'>Symphony is a powerhouse music editor program designed for users of all skill levels. It features an editor built with Python and SDL2, and a project manager built in React + Vite and running locally via Electron (node.js). I began working on Symphony in January 2025, iterating over months to build what is now a full-fledged product, used by real musical institutions like Northeastern University's <i>NAAD</i> a-cappella team.</span>
-          <span className='subheader'>Stack: <i>React.js • Electron • Node.js • Python • SDL2 • Pygame.Mixer</i></span>
-          <div style={{display:'flex', flexDirection:'row', gap:'10px', marginTop:'10px'}}>
+          <div style={{display:'flex', flexDirection:'row', gap:'20px', marginTop:'10px'}}>
+            <span className='header' text-style='display'><big>Symphony</big></span>
             <Specular className='specular-appearance accent' bleedColor='#e3b2ff' specularColor='#6b3a6b' dynamic={true} callToAction={true}>
               <Link size={18}/>Official Website
             </Specular>
           </div>
+          <span className='subheader' text-style='display'><big>A professional-grade music production platform.</big></span>
+          <img src='https://www.dropbox.com/scl/fi/sj3qb5zu4x82k8s6785rn/Symphony-SS.png?rlkey=lxpta4hjcdhybl4400nrql20o&st=wpe8nxt3&raw=1' style={{borderRadius:'10px', width: '100%', margin: '10px 0px 20px 0px', outlineOffset: '-1px', outline: '1px solid #ffffff33', boxShadow: '0px 5px 13px #00000044'}}></img>
+          <span className='content'><big>Symphony is a powerhouse music editor program designed for users of all skill levels. It features an editor built with Python and SDL2, and a project manager built in React + Vite and running locally via Electron (node.js). I began working on Symphony in January 2025, iterating over months to build what is now a full-fledged product, used by real musical institutions like Northeastern University's <i>NAAD</i> a-cappella team.</big></span>
+          <span className='subheader'><big>Stack: <i>React.js • Electron • Node.js • Python • SDL2 • Pygame.Mixer</i></big></span>
         </div>
       </Specular>
       <div className="carousel-root" style={{ width: '100%', maxWidth: 600, position: 'relative' }}>
@@ -100,7 +101,7 @@ function Flagship() {
           overrideSize={40}
           className="carousel-btn prev"
           style={{ position: 'absolute', top: '300px', right: '-20px', zIndex: 2 }}
-          onClick={() => goTo(current - 1)}
+          onClick={() => goTo(current + 1)}
           dynamic={true}
         >
           <ChevronRight />
@@ -109,7 +110,7 @@ function Flagship() {
           overrideSize={40}
           className="carousel-btn next"
           style={{ position: 'absolute', top: '300px', left: '-20px', zIndex: 2 }}
-          onClick={() => goTo(current + 1)}
+          onClick={() => goTo(current - 1)}
           dynamic={true}
         >
           <ChevronLeft />
@@ -137,7 +138,7 @@ function Flagship() {
               style={{
                 display: 'flex',
                 transition: isDragging ? 'none' : 'transform 0.4s cubic-bezier(.4,1.2,.4,1)',
-                transform: `translateX(calc(${-current * 104}% + ${offset + 40}px))`,
+                transform: `translateX(calc(${-current * 103}% + ${offset + 58}px))`,
                 cursor: isDragging ? 'grabbing' : 'grab',
               }}
             >

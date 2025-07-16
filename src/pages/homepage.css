@@ -56,8 +56,12 @@
   justify-content: center;
 }
 
+.responsive {
+  flex-direction: row;
+}
+
 @media (max-width: 800px) {
-  .small-text {
+  .responsive {
     flex-direction: column;
   }
 }

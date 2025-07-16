@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Blocks, Briefcase, GraduationCap, Heart, Star } from 'lucide-react';
+import { Lightbulb, Briefcase, GraduationCap, Heart, Star } from 'lucide-react';
 
 import Specular from '@/components/Specular';
 
@@ -63,7 +63,7 @@ function FreshNavbar() {
   return (
     <>
       <div className={`navbar ${scrolled ? 'scrolled' : ''} ${isMobile ? 'mobile' : ''}`}>
-        <div className={`navbar-title ${scrolled ? 'scrolled' : ''}`} text-style='display'><Blocks />Ajaya Ramachandran</div>
+        <div className={`navbar-title ${scrolled ? 'scrolled' : ''}`} text-style='display'><Lightbulb />Ajaya Ramachandran</div>
         <NavLinks mobile={isMobile} />
       </div>
     </>

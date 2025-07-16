@@ -82,7 +82,7 @@ function HomePage({ seed = 100 }) {
         <div className='big-text' text-style='display' style={{ position: 'relative', zIndex: 1 }}>
           <Sparkles size={52} style={{marginRight:'20px', color:'#ef9067'}}/>{typedText}{showCursor && <span className="type-cursor">⬤</span>}
         </div>
-        <Specular className='small-text' style={{ "--specular-color": "#4e4e80" }}>
+        <Specular className='small-text' responsive={true} style={{ "--specular-color": "#4e4e80" }}>
           
             I'm building 
             <Specular style={{ "--specular-color": "#6b6b96" }}><b><Hammer />powerful software</b></Specular>

@@ -31,7 +31,6 @@
   flex-direction: column;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: -0.4px;
   padding: 40px 30px;
   border-radius: 5px;
   position: relative;
@@ -47,12 +46,12 @@
 .section .subheader {
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.1px;
   margin-top: 14px;
   margin-bottom: 10px;
 }
 .section .content {
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 /* --- Carousel Swipeable Styles --- */
@@ -69,6 +68,10 @@
   background: none;
   border-radius: 0px;
   min-height: 220px;
+  mask-image: linear-gradient(to right, #00000000 0%, #ffffffff 10%, #ffffffff 90%, #00000000 100%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  -webkit-mask-image: linear-gradient(to right, #00000000 0%, #ffffffff 10%, #ffffffff 90%, #00000000 100%);
   /* outline: 1px solid rgb(255, 0, 0); */
 }
 .carousel-track {
@@ -88,7 +91,7 @@
   pointer-events: auto;
   padding: 24px;
   border-radius: 18px;
-  height: 600px;
+  height: 700px;
   margin: 0;
   transition: box-shadow 0.2s;
   /* outline: 1px solid rgb(25, 0, 255); */
@@ -102,16 +105,17 @@
   border-radius: 50%;
   backdrop-filter: blur(9px);
   background-color: #4e4e8088;
-  border: 1px solid #ffffff44;
+  /* border: 2px solid #ffffff44; */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 2;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, background-color 0.2s !important;
 }
 .carousel-btn:hover {
-  border: 1px solid #ffffff77;
+  /* border: 2px solid #ffffff77; */
+  background-color: #6868a288;
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 
@@ -125,12 +129,12 @@
 }
 .carousel-mask-left {
   left: 0;
-  background: linear-gradient(to right, hsl(240, 50%, 26%) 0%, hsla(0, 0%, 100%, 0));
+  /* background: linear-gradient(to right, hsl(240, 50%, 26%) 0%, hsla(0, 0%, 100%, 0)); */
   backdrop-filter: blur(1px);
 }
 .carousel-mask-right {
   right: 0;
-  background: linear-gradient(to left, hsl(240, 50%, 26%) 0%, hsla(0, 0%, 100%, 0));
+  /* background: linear-gradient(to left, hsl(240, 50%, 26%) 0%, hsla(0, 0%, 100%, 0)); */
   backdrop-filter: blur(1px);
 }
 

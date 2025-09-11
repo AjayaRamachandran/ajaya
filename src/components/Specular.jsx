@@ -12,6 +12,8 @@ function Specular({
   overrideSize = null,
   callToAction = false,
   responsive = false,
+  link = null,
+  refID = null,
   ...rest
 }) {
   const [desiredAngle, setDesiredAngle] = useState(45);
@@ -33,7 +35,9 @@ function Specular({
   }, [desiredAngle, currentAngle]);
 
   return (
-    <div
+    <a
+      href={link ? link : null}
+      target='_blank'
       className={'specular' + (dynamic ? ' dynamic' : '') + (mounted ? ' specular-mounted' : '') + (className ? ` ${className}` : '')}
       style={{
         '--specular-color': specularColor,
@@ -53,7 +57,7 @@ function Specular({
       {...rest}
     >
       <div className={responsive? 'responsive': ''} style={{padding: '7px 10px', display: 'flex', alignItems:'center', gap: '10px'}}>{children}</div>
-    </div>
+    </a>
   );
 }
 

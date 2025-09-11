@@ -9,17 +9,17 @@ function NavLinks({ mobile = false }) {
   if (mobile) {
     return (
       <div className="mobile-navbar">
-        <Specular className='navbar-link' dynamic={true} mobile={true}>
-          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Star size={30}/></span>Flagship Project
+        <Specular className='navbar-link' dynamic={true} mobile={true} onClick={() => document.getElementById('flagship').scrollIntoView({ behavior: 'smooth' })}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Star size={30}/></span>
         </Specular>
-        <Specular className='navbar-link' dynamic={true} mobile={true}>
-          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Briefcase size={30}/></span>Experience
+        <Specular className='navbar-link' dynamic={true} mobile={true} onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Briefcase size={30}/></span>
         </Specular>
-        <Specular className='navbar-link' dynamic={true} mobile={true}>
-          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><GraduationCap size={30}/></span>Education
+        <Specular className='navbar-link' dynamic={true} mobile={true} onClick={() => document.getElementById('education').scrollIntoView({ behavior: 'smooth' })}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><GraduationCap size={30}/></span>
         </Specular>
-        <Specular className='navbar-link' dynamic={true} mobile={true}>
-          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Heart size={30}/></span>My Philosophy
+        <Specular className='navbar-link' dynamic={true} mobile={true} onClick={() => document.getElementById('philosophy').scrollIntoView({ behavior: 'smooth' })}>
+          <span style={{display:'inline-flex', alignItems:'center', marginRight: mobile ? 0 : 8}}><Heart size={30}/></span>
         </Specular>
       </div>
     );
@@ -28,16 +28,16 @@ function NavLinks({ mobile = false }) {
     <>
       <div></div>
       <div className="navbar-right">
-        <Specular className='navbar-link' dynamic={true}>
+        <Specular className='navbar-link' dynamic={true} onClick={() => document.getElementById('flagship').scrollIntoView({ behavior: 'smooth' })}>
           <span style={{display:'inline-flex', alignItems:'center'}}><Star size={18}/></span>Flagship Project
         </Specular>
-        <Specular className='navbar-link' dynamic={true}>
+        <Specular className='navbar-link' dynamic={true} onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })}>
           <span style={{display:'inline-flex', alignItems:'center'}}><Briefcase size={18}/></span>Experience
         </Specular>
-        <Specular className='navbar-link' dynamic={true}>
+        <Specular className='navbar-link' dynamic={true} onClick={() => document.getElementById('education').scrollIntoView({ behavior: 'smooth' })}>
           <span style={{display:'inline-flex', alignItems:'center'}}><GraduationCap size={18}/></span>Education
         </Specular>
-        <Specular className='navbar-link' dynamic={true}>
+        <Specular className='navbar-link' dynamic={true} onClick={() => document.getElementById('philosophy').scrollIntoView({ behavior: 'smooth' })}>
           <span style={{display:'inline-flex', alignItems:'center'}}><Heart size={18}/></span>My Philosophy
         </Specular>
       </div>

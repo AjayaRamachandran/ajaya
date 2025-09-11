@@ -1,0 +1,51 @@
+/* Philosophy Section Styles */
+.philosophy-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.philosophy-title {
+  font-size: calc(20px + 100vw / 80);
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.philosophy-points {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  max-width: 800px;
+  width: 100%;
+  align-items: center;
+}
+
+.philosophy-point {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+}
+.point-content {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 10px;
+}
+
+.philosophy-point-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.philosophy-point-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}

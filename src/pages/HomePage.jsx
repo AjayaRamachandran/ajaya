@@ -5,6 +5,10 @@ import { Sparkles, Hammer, Brush, Github, Linkedin, FileText } from 'lucide-reac
 import Flagship from '@/components/Flagship'
 import Navbar from '@/components/Navbar'
 import Specular from '@/components/Specular';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+import Philosophy from '@/components/Philosophy';
+import Footer from '@/components/Footer';
 
 import './homepage.css';
 import ProgressBar from '@/components/ProgressBar';
@@ -91,19 +95,23 @@ function HomePage({ seed = 100 }) {
 
         </Specular>
         <div className='links-row'>
-          <Specular className='specular-appearance' dynamic={true}>
+          <Specular className='specular-appearance' dynamic={true} link='https://github.com/AjayaRamachandran'>
             <span style={{display:'inline-flex', alignItems:'center'}}><Github size={18} /></span>GitHub
           </Specular>
-          <Specular className='specular-appearance' dynamic={true}>
+          <Specular className='specular-appearance' dynamic={true} link='https://www.linkedin.com/in/ajaya-ramachandran/'>
             <span style={{display:'inline-flex', alignItems:'center'}}><Linkedin size={18} /></span>Linkedin
           </Specular>
-          <Specular className='specular-appearance' dynamic={true}>
+          <Specular className='specular-appearance' dynamic={true} link='https://www.dropbox.com/scl/fi/kcmudpfd7otphbr07qj09/Ajaya_Ramachandran_Resume.pdf?rlkey=cpmxpnjk5el2guxeg17ylebed&st=ev1842d6&raw=1'>
             <span style={{display:'inline-flex', alignItems:'center'}}><FileText size={18} /></span>Resume
           </Specular>
         </div>
       </div>
       <hr />
       <Flagship />
+      <Experience />
+      <Education />
+  <Philosophy />
+  <Footer />
     </>
   );
 }

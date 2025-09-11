@@ -9,29 +9,38 @@ function Flagship() {
     {
       header: 'VRC Tracker',
       subheader: 'A gamified robotics league that took the world by storm.',
-      content: <>VRC Tracker is a web-based tracker app that turns boring points into competitive ranks, accolades, and more. Upon the day of release, it received more than 2 thousand visits and has continued to receive several thousands visits since.</>,
+      content: <><img src='https://www.dropbox.com/scl/fi/jl7g33e6w3auttmmiczxi/Sunday-07-Sep-2025-12-55-21.png?rlkey=yy2jsl2ljp9kyawzqz9r90ki9&st=bqyractz&raw=1' width='100%' style={{marginBottom: '15px'}}></img>VRC Tracker is a web-based tracker app that turns boring points into competitive ranks, accolades, and more. Upon the day of release, it received more than 2 thousand visits and has continued to receive several thousands of visits since.</>,
       stack: 'AJAX • Firebase • Python Flask • Vercel • HTML/CSS',
       links: [
-        { text: 'VRC Tracker', icon: <Link size={18}/>, className: 'specular-appearance', specularColor: '#3c7078' },
-        { text: 'GitHub', icon: <Github size={18}/>, className: 'specular-appearance' },
+        { text: 'VRC Tracker', link: 'https://powerscore.vercel.app', icon: <Link size={18}/>, className: 'specular-appearance', specularColor: '#3c7078' },
+        { text: 'GitHub', link: 'https://github.com/AjayaRamachandran/PowerScore', icon: <Github size={18}/>, className: 'specular-appearance' },
+      ]
+    },
+    {
+      header: 'Walkthroughs',
+      subheader: "Enchancing business-client interaction with a custom-built, comprehensive documentation network.",
+      content: <><img src='https://www.dropbox.com/scl/fi/8ebmzg1tjk4ulh82mkvbl/An-image-of-the-document-editor-takes-inspiration-from-Notion.png?rlkey=rjivc11pwh3oafdqrul2qch8j&st=8un1tlyb&raw=1' width='100%' style={{marginBottom: '15px', borderRadius: '5px'}}></img>In a world of data, it's increasingly important for companies to have methods of communicating the ins and outs of their platform with customers. While existing tools may do this, made-in-house platforms allow for more control and reliability. Interning at Vestmark, I developed <i>Walkthroughs,</i> aiming to provide proper documentation to clients in a lightweight, scalable web app.</>,
+      stack: 'React.js • Express.js • Node.js • PostgreSQL • Auth (via JWT) • ',
+      links: [
+        { text: 'See in Action', link: 'https://www.dropbox.com/scl/fo/ff851ivouo07jfkq4vxu7/AIqztCRFgs3ZHtNToFZzm_g?rlkey=60k44v7ti4qo313gyxkyq8do3&st=arowb9l8&dl=0', icon: <FileImage size={18}/>, className: 'specular-appearance', specularColor: '#7f3f8c' }
       ]
     },
     {
       header: 'LaunchPad',
-      subheader: "Accelerating the workforce with AI.",
-      content: <>Leading a team of 4 developers, in May of 2025 I developed LaunchPad, an AI-powered data retrieval engine that can scan across entire company databases to solve client cases in a matter of seconds as opposed to hours or days. It won 'most creative' at <i>Vestmark</i>'s 2025 AI Hackathon.</>,
+      subheader: "Accelerating client-focused technical support with Agentic AI.",
+      content: <><img src='https://www.dropbox.com/scl/fi/foq654mwkwjzx886bu81a/A-general-screenshot-showing-the-interface-of-LaunchPad.jpg?rlkey=iygvsx4xmjp6l38gutot2ec6f&st=uw8rlgzi&raw=1' width='100%' style={{marginBottom: '15px', borderRadius: '5px'}}></img>Leading a team of 4 developers, in May of 2025 I developed LaunchPad, an AI-powered data retrieval engine that can scan across entire company databases to solve client cases in a matter of seconds as opposed to hours or days. It won 'most creative' at <i>Vestmark</i>'s 2025 AI Hackathon.</>,
       stack: 'React.js • Express.js • Node.js • OpenAI API • Salesforce API • Confluence API',
       links: [
-        { text: 'See in Action', icon: <FileImage size={18}/>, className: 'specular-appearance', specularColor: '#7f3f8c' }
+        { text: 'See in Action', link: 'https://www.dropbox.com/scl/fo/v5r0bfk4elz1zo907y1zh/AINCjZ_kIjvn64wCs8fqsms?rlkey=m3l5pk7102slcv7fmirj8n0fn&st=3hitakta&dl=0', icon: <FileImage size={18}/>, className: 'specular-appearance', specularColor: '#7f3f8c' }
       ]
     },
     {
       header: 'Procedural Terrain Generator',
       subheader: "Replicating the world generation of the world's most popular video game.",
-      content: <>Designed originally for the purpose of creating a fun plugin for Minecraft, the Procedural Island Generator became a deep pursuit of understanding of the video game's intricate world generation system. From natural ecosystems to undergound resources, creating an entire Minecraft world in code is no easy feat.</>,
+      content: <><img src='https://www.dropbox.com/scl/fi/bjcl5kejok4ty6tsx1aw4/2024-12-26_21.21.19.png?rlkey=tcznu1gqm4od0pd0hue36ux5x&st=m6lvj9wa&raw=1' width='100%' style={{marginBottom: '15px', borderRadius: '5px'}}></img>Designed originally for the purpose of creating a fun plugin for Minecraft, the Procedural Island Generator became a deep pursuit of understanding of the video game's intricate world generation system. From natural ecosystems to undergound resources, creating an entire Minecraft world in code is no easy feat.</>,
       stack: 'Python (mcschematic) • Java',
       links: [
-        { text: 'GitHub', icon: <Github size={18}/>, className: 'specular-appearance' }
+        { text: 'GitHub', link: 'https://github.com/AjayaRamachandran/Procedural-Terrain-Generator', icon: <Github size={18}/>, className: 'specular-appearance' }
       ]
     }
   ];
@@ -78,7 +87,7 @@ function Flagship() {
 
   return (
     <>
-      <div className='section-title' text-style='display'>Flagship Project</div>
+      <div className='section-title' text-style='display' id='flagship'>Flagship Project</div>
       {/* Symphony project restored as a standalone section */}
       <Specular className="symphony-section" overrideSize={'calc(40% + 200px)'}>
         <div className='section'>
@@ -100,7 +109,7 @@ function Flagship() {
         <Specular
           overrideSize={40}
           className="carousel-btn prev"
-          style={{ position: 'absolute', top: '300px', right: '-20px', zIndex: 2 }}
+          style={{ position: 'absolute', top: '450px', right: '-20px', zIndex: 2 }}
           onClick={() => goTo(current + 1)}
           dynamic={true}
         >
@@ -109,7 +118,7 @@ function Flagship() {
         <Specular
           overrideSize={40}
           className="carousel-btn next"
-          style={{ position: 'absolute', top: '300px', left: '-20px', zIndex: 2 }}
+          style={{ position: 'absolute', top: '450px', left: '-20px', zIndex: 2 }}
           onClick={() => goTo(current - 1)}
           dynamic={true}
         >
@@ -154,7 +163,7 @@ function Flagship() {
                     <span className='subheader'>Stack: <i>{card.stack}</i></span>
                     <div style={{display:'flex', flexDirection:'row', gap:'10px', marginTop:'10px'}}>
                       {card.links.map((link, idx2) => (
-                        <Specular key={idx2} className={link.className} bleedColor={link.bleedColor} specularColor={link.specularColor} dynamic={true}>{link.icon}{link.text}</Specular>
+                        <Specular link={link.link} key={idx2} className={link.className} bleedColor={link.bleedColor} specularColor={link.specularColor} dynamic={true}>{link.icon}{link.text}</Specular>
                       ))}
                     </div>
                   </div>

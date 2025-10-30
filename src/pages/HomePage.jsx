@@ -101,7 +101,7 @@ function HomePage({ seed = 100 }) {
           <Specular className='specular-appearance' dynamic={true} link='https://www.linkedin.com/in/ajaya-ramachandran/'>
             <span style={{display:'inline-flex', alignItems:'center'}}><Linkedin size={18} /></span>Linkedin
           </Specular>
-          <Specular className='specular-appearance' dynamic={true} link='https://www.dropbox.com/scl/fi/kcmudpfd7otphbr07qj09/Ajaya_Ramachandran_Resume.pdf?rlkey=cpmxpnjk5el2guxeg17ylebed&st=ev1842d6&raw=1'>
+          <Specular className='specular-appearance' dynamic={true} link='https://www.dropbox.com/scl/fi/kcmudpfd7otphbr07qj09/Ajaya_Ramachandran_Resume.pdf?rlkey=cpmxpnjk5el2guxeg17ylebed&st=z8n5zcck&raw=1'>
             <span style={{display:'inline-flex', alignItems:'center'}}><FileText size={18} /></span>Resume
           </Specular>
         </div>

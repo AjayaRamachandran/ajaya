@@ -93,7 +93,7 @@ function Flagship() {
         <div className='section'>
           <div style={{display:'flex', flexDirection:'row', gap:'20px', marginTop:'10px'}}>
             <span className='header' text-style='display'><big>Symphony</big></span>
-            <Specular className='specular-appearance accent' link='https://symphony.nimbialapps.com' bleedColor='#e3b2ff' specularColor='#6b3a6b' dynamic={true} callToAction={true}>
+            <Specular className='specular-appearance accent' link='https://symphony.nimbial.com' bleedColor='#e3b2ff' specularColor='#6b3a6b' dynamic={true} callToAction={true}>
               <Link size={18}/>Official Website
             </Specular>
             <Specular className='specular-appearance' link='https://github.com/AjayaRamachandran/symphony' dynamic={true}>
